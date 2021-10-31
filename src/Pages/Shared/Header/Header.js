@@ -6,7 +6,8 @@ import './Header.css';
 
 const Header = () => {
     const { user, logOut } = useAuth();
-    console.log(user);
+    // console.log(user);
+
     return (
         <div className="sticky-top">
             <nav className="navbar navbar-expand-md navbar-light nav-bar-btn py-0">

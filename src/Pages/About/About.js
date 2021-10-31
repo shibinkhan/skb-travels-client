@@ -26,7 +26,7 @@ const About = () => {
             {/* What We Offer */}
             <div className="privacyMain py-3 mb-3">
                 <div className="mx-auto privacy">
-                    <h4 className="color fw-bold">What We Offer</h4>
+                    <h4 className="color fw-bold">What We Offer?</h4>
                     <p>For over 55 years, EF has been working to keep minds and the world wide open. We design tours to help educators teach, and so students can learn more—about tolerance, other perspectives, and themselves. Our company’s roots are in language learning and cultural exchange, and over time, EF’s mission to provide immersive, life-changing education has remained the same.</p>
                     <p>By putting people at the center of everything we do, the team at EF Educational Tours makes understanding come alive for our customers. Because a meaningful travel experience starts with whoever’s showing you the way forward. Anyone can take you someplace new. We’ll take the time to help you understand it. Here at EF, learning comes first, and our time-tested approach to student travel reflects that.</p>
                 </div>

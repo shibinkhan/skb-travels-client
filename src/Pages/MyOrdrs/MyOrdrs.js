@@ -9,7 +9,7 @@ const MyOrdrs = () => {
     const { user } = useAuth();
     
     const myPlan = singleOrder.filter(myOrder => myOrder.customerInfo.email === user.email);
-    console.log(myPlan);
+    // console.log(myPlan);
 
 
 

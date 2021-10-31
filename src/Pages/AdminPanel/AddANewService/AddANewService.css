@@ -11,4 +11,5 @@
 .add-service form input, textarea {
     width: 50%;
     margin-bottom: 10px;
+    border: 1px solid rgb(0, 112, 84);
 }

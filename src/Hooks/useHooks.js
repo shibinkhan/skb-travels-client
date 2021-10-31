@@ -6,7 +6,7 @@ const useHooks = () => {
 
     // services
     useEffect(() => {
-        fetch('http://localhost:5000/plans')
+        fetch('https://fast-taiga-62917.herokuapp.com/plans')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -16,13 +16,13 @@ const useHooks = () => {
 
     // plans
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://fast-taiga-62917.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
                 setSingleOrder(data);
             });
-    }, [setSingleOrder]);
+    }, []);
 
     return {
         services,

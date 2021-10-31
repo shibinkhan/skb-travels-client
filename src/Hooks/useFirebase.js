@@ -45,7 +45,7 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
             const user = result.user;
-            console.log(user);
+            // console.log(user);
             setUserName();
             setError('');
         })
@@ -71,7 +71,7 @@ const useFirebase = () => {
         signInWithEmailAndPassword(auth, email, password)
         .then(userCredential => {
             const user = userCredential.user;
-            console.log(user);
+            // console.log(user);
             setError('');
         })
         .catch(error => {

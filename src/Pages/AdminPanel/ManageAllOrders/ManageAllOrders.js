@@ -1,6 +1,7 @@
 import React from 'react';
 import useHooks from '../../../Hooks/useHooks';
 import ManageOrders from './ManageOrders';
+import './ManageAllOrders.css';
 
 const ManageAllOrders = () => {
     const { singleOrder } = useHooks();

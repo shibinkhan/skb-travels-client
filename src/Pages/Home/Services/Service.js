@@ -4,6 +4,7 @@ import './Services.css';
 
 const Service = ({ service }) => {
     const { _id, img1, name, location, rating, stay, price, description1 } = service;
+    
     return (
         <div className="col">
             <div className="card-body-custom card h-100">

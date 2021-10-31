@@ -14,13 +14,13 @@ const ServiceDetails = () => {
 
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(data);
-        // reset();
+        // console.log(data);
+        reset();
         const orderInfo = {
             planInfo: singleService,
             customerInfo: data
         };
-        axios.post('http://localhost:5000/orders', orderInfo)
+        axios.post('https://fast-taiga-62917.herokuapp.com/orders', orderInfo)
             .then(res => {
                 // console.log(res);
                 if (res.data.insertedId) {
@@ -30,7 +30,7 @@ const ServiceDetails = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/plans/${serviceId}`)
+        fetch(`https://fast-taiga-62917.herokuapp.com/plans/${serviceId}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -45,7 +45,7 @@ const ServiceDetails = () => {
             <hr />
             <div className="row">
                 <div className="service-booking-main col-12 col-sm-5 col-md-4 col-lg-3">
-                    <div className="service-booking mb-4">
+                    <div className="service-booking mb-4 px-3">
                         <div>
                             <div>
                                 <p>Location: <span className="fw-bold">{singleService?.location}.</span></p>
@@ -55,7 +55,7 @@ const ServiceDetails = () => {
                             </div>
                             <hr />
 
-                            <h4 className="color">About Yourself</h4>
+                            <h4 className="color fw-bold">About Yourself</h4>
                             <form className="order-form" onSubmit={handleSubmit(onSubmit)}>
                                 <input placeholder="Name..." defaultValue={user?.displayName} {...register("customerName")} />
                                 <br /><br />

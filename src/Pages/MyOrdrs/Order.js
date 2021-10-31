@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useHooks from '../../Hooks/useHooks';
 
 const Order = ({ order }) => {
@@ -6,22 +6,20 @@ const Order = ({ order }) => {
     const { name, location, rating, stay, price, img1 } = planInfo;
     const { customerName, email, phone, address } = customerInfo;
     const { singleOrder, setSingleOrder } = useHooks();
-    
-
 
     const handleDelete = id => {
         const procced = window.confirm('Are you sure want to cancel this plan?');
         if (procced) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://fast-taiga-62917.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    // console.log(data);
                     if (data.deletedCount) {
-                        const remainingPlans = singleOrder.filter(remaining => remaining._id !== id);
-                        setSingleOrder(remainingPlans);
+                        const remainings = singleOrder.filter(remaining => remaining._id !== id);
+                        // console.log(remainings);
                         alert('Plan Canceled.')
+                        setSingleOrder(remainings);
                     };
                 });
         };
