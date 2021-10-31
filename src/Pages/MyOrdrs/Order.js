@@ -18,7 +18,7 @@ const Order = ({ order }) => {
                     if (data.deletedCount) {
                         const remainings = singleOrder.filter(remaining => remaining._id !== id);
                         // console.log(remainings);
-                        alert('Plan Canceled.')
+                        alert('Plan Canceled, Relode Now.')
                         setSingleOrder(remainings);
                     };
                 });

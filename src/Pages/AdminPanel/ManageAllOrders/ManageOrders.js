@@ -20,7 +20,7 @@ const ManageOrders = ({order}) => {
                     if (data.deletedCount) {
                         const remainingPlans = singleOrder.filter(remaining => remaining._id !== id);
                         setSingleOrder(remainingPlans);
-                        alert('Plan Canceled.')
+                        alert('Plan Canceled, Relod Now.')
                     };
                 });
         };
