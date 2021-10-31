@@ -1,0 +1,42 @@
+.about-main {
+    background-color: rgb(204, 255, 238);
+}
+.aboutUs-main {
+    margin: 0px;
+}
+.about-title {
+    font-size: 75px;
+}
+.aboutUs {
+    text-align: left;
+}
+.aboutUs p {
+    font-size: 20px;
+}
+.about-img {
+    border-radius: 5px;
+}
+
+/* privacy */
+.privacyMain {
+    background-color: rgb(204, 255, 238);
+}
+.privacy {
+    max-width: 95%;
+}
+.read-more {
+    border: none;
+    color: white;
+    background-color: #31383d;
+    padding: 5px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+.read-more:hover {
+    transform: scale(1.05);
+    background-color: #dadada;
+    color: black;
+}

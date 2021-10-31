@@ -1,0 +1,32 @@
+.main-navbar {
+    padding: 7px;
+}
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+}
+.user-img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+.nav-link {
+    font-size: 18px;
+}
+.nav-link:hover {
+    background-color: rgb(114, 245, 212);
+    border-radius: 5px;
+}
+.nav-bar-btn {
+    background-color: rgb(163, 253, 223);
+    font-weight: 700;
+}
+.dropdown-toggle {
+    
+}
+.nav-bar-dropdown {
+    background-color: rgb(163, 253, 223);
+    padding: 10px;
+}
+.user-name {
+    font-size: 18px;
+}
